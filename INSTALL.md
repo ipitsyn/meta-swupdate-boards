@@ -89,11 +89,13 @@ EoF
 
 sudo mkfs.vfat -v -F 32 -n BOOT -c ${CARD}1
 sudo mkfs.ext4 -v ${CARD}2
-sudo mkfs.ext4 -v -L media ${CARD}4
+sudo mkfs.ext4 -v -L opt ${CARD}4
 sudo mkdir -p /mnt/dst/p1
 sudo mkdir -p /mnt/dst/p2
+sudo mkdir -p /mnt/dst/p4
 sudo mount ${CARD}1 /mnt/dst/p1
 sudo mount ${CARD}2 /mnt/dst/p2
+sudo mount ${CARD}4 /mnt/dst/p4
 ```
 
 ### Copy everything to SD card
@@ -103,12 +105,21 @@ sudo rsync -avP --numeric-ids /mnt/src/p2/ /mnt/dst/p2
 sync
 ```
 
+### Copy persistent SWUpdate files
+sudo mkdir -p /mnt/dst/p4/swupdate/{conf.d,www}
+sudo cp ../layers/meta-swupdate-boards/persistent/swupdate.cfg /mnt/dst/p4/swupdate/
+sudo cp ../layers/meta-swupdate-boards/persistent/swupdate.key.pub /mnt/dst/p4/swupdate/
+sudo cp ../layers/meta-swupdate-boards/persistent/09-swupdate-args /mnt/dst/p4/swupdate/conf.d/
+sudo tar xf ../layers/meta-swupdate-boards/persistent/swupdate-www.tar.gz -C /mnt/dst/p4/swupdate/www/
+
+
 ### Unmount and cleanup
 ```
 sudo umount /mnt/src/p1
 sudo umount /mnt/src/p2
 sudo umount /mnt/dst/p1
 sudo umount /mnt/dst/p2
+sudo umount /mnt/dst/p4
 sudo rm -rf /mnt/src
 sudo rm -rf /mnt/dst
 sudo losetup -d $LOOP
