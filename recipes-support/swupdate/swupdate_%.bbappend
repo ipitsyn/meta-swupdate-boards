@@ -11,10 +11,6 @@ SRC_URI:append:beaglebone-yocto = " file://10-remove-force-ro"
 
 SRC_URI:append:rpi = " \
     file://swupdate.sh \
-    file://persistent/swupdate-www.tar.gz \
-    file://persistent/swupdate.cfg \
-    file://persistent/swupdate.key.pub \
-    file://persistent/09-swupdate-args \
     "
 
 do_install:append() {
