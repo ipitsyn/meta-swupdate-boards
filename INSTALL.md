@@ -18,8 +18,8 @@ git clone https://github.com/sbabic/meta-swupdate -b kirkstone
 git clone https://github.com/agherzan/meta-raspberrypi -b kirkstone
 # git clone https://github.com/sbabic/meta-swupdate-boards -b master
 # git clone https://github.com/malyjak/meta-swupdate-boards -b kirkstone
+# pushd meta-swupdate-boards && git checkout a3dc5d0 && popd
 git clone https://github.com/ipitsyn/meta-swupdate-boards -b kirkstone
-pushd meta-swupdate-boards && git checkout a3dc5d0 && popd
 
 cd ..
 . layers/poky/oe-init-build-env build
