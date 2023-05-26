@@ -7,7 +7,7 @@ After=overlays-etc-dirs.service
 What=overlay
 Where=/etc
 Type=overlay
-Options=lowerdir=/etc,upperdir=/media/overlayfs/etc/upper,workdir=/media/overlayfs/etc/work
+Options=lowerdir=/etc,upperdir=/opt/overlayfs/etc/upper,workdir=/opt/overlayfs/etc/work
 
 [Install]
 WantedBy=local-fs.target

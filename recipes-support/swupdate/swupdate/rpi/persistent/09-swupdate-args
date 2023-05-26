@@ -1,0 +1,26 @@
+rootfs=$(swupdate -g)
+
+if [ "$rootfs" == '/dev/mmcblk0p2' ];then
+	selection="-e stable,copy2"
+else
+	selection="-e stable,copy1"
+fi
+
+state=$(fw_printenv ustate | cut -f 2 -d'=')
+if [ -z "$state" ];then
+	fw_setenv ustate 1
+fi
+
+if [ -e /opt/swupdate/swupdate.cfg ];then
+	CFGFILE="/opt/swupdate/swupdate.cfg"
+else
+	CFGFILE="/etc/swupdate.cfg"
+fi
+
+# Don't start Suricatta by default
+SWUPDATE_SURICATTA_ARGS=""
+
+# Start webserver
+SWUPDATE_WEBSERVER_ARGS="-p @MONGOOSE_PORT@"
+
+SWUPDATE_ARGS="-H @MACHINE@:1.0 ${selection} -p 'reboot' -f ${CFGFILE}"
