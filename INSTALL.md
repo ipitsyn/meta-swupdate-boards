@@ -35,7 +35,6 @@ bitbake-layers add-layer ../layers/meta-swupdate-boards
 
 cat << EoF >> conf/local.conf
 
-MONGOOSE_PORT = "8081"
 MACHINE = "raspberrypi4-64"
 RPI_USE_U_BOOT = "1"
 ENABLE_UART = "1"

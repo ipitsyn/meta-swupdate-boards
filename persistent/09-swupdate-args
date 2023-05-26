@@ -21,6 +21,6 @@ fi
 SWUPDATE_SURICATTA_ARGS=""
 
 # Start webserver
-SWUPDATE_WEBSERVER_ARGS="-p @MONGOOSE_PORT@"
+SWUPDATE_WEBSERVER_ARGS="-p 8081"
 
-SWUPDATE_ARGS="-H @MACHINE@:1.0 ${selection} -p 'reboot' -f ${CFGFILE}"
+SWUPDATE_ARGS="-H raspberrypi4-64:1.0 ${selection} -p 'reboot' -f ${CFGFILE}"
