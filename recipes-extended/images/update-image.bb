@@ -17,3 +17,6 @@ IMAGE_DEPENDS = "core-image-full-cmdline"
 SWUPDATE_IMAGES = "core-image-full-cmdline"
 
 SWUPDATE_IMAGES_FSTYPES[core-image-full-cmdline] = ".ext4.gz"
+
+# don't update /etc/fstab
+WIC_CREATE_EXTRA_ARGS:append = " --no-fstab-update"

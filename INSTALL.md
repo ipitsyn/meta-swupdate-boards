@@ -77,6 +77,9 @@ sudo mount ${LOOP}p1 /mnt/src/p1
 sudo mount ${LOOP}p2 /mnt/src/p2
 ```
 
+### Fix: remove extra records appended to fstab as a part of the build process
+sudo sed -i '/# ~~~/,$d' /mnt/src/p2/etc/fstab
+
 ### Prepare an SD card
 ```
 CARD=/dev/sda
