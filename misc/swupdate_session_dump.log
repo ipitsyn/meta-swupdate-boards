@@ -1,0 +1,521 @@
+16:07:58.673444 IP (tos 0x0, ttl 64, id 31008, offset 0, flags [DF], proto TCP (6), length 279)
+    10.126.161.113.47242 > 10.126.160.69.80: Flags [P.], cksum 0x57bc (incorrect -> 0x7265), seq 3647509521:3647509748, ack 1529088182, win 502, options [nop,nop,TS val 1496971835 ecr 228543573], length 227: HTTP, length: 227
+	GET /default/controller/v1/e45f0161078a HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+16:07:58.694157 IP (tos 0x0, ttl 62, id 27252, offset 0, flags [DF], proto TCP (6), length 548)
+    10.126.160.69.80 > 10.126.161.113.47242: Flags [P.], cksum 0x141e (correct), seq 1:497, ack 227, win 227, options [nop,nop,TS val 228543594 ecr 1496971835], length 496: HTTP, length: 496
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 148
+	Content-Type: application/json;charset=utf-8
+	Date: Wed, 14 Jun 2023 16:07:58 GMT
+	Etag: "0c1ed59e71257d1b201b59138777d093e"
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+	{"config":{"polling":{"sleep":"00:01:00"}},"_links":{"configData":{"href":"http://hawkbit.igor.lan/default/controller/v1/e45f0161078a/configData"}}} [|http]
+16:07:58.696298 IP (tos 0x0, ttl 64, id 31010, offset 0, flags [DF], proto TCP (6), length 333)
+    10.126.161.113.47242 > 10.126.160.69.80: Flags [P.], cksum 0x57f2 (incorrect -> 0x27bd), seq 227:508, ack 497, win 501, options [nop,nop,TS val 1496971858 ecr 228543594], length 281: HTTP, length: 281
+	PUT /default/controller/v1/e45f0161078a/configData HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	Content-Length: 253
+	Expect: 100-continue
+	
+16:07:58.701031 IP (tos 0x0, ttl 62, id 27253, offset 0, flags [DF], proto TCP (6), length 77)
+    10.126.160.69.80 > 10.126.161.113.47242: Flags [P.], cksum 0xad32 (correct), seq 497:522, ack 508, win 236, options [nop,nop,TS val 228543601 ecr 1496971858], length 25: HTTP, length: 25
+	HTTP/1.1 100 Continue
+	
+16:07:58.701512 IP (tos 0x0, ttl 64, id 31012, offset 0, flags [DF], proto TCP (6), length 305)
+    10.126.161.113.47242 > 10.126.160.69.80: Flags [P.], cksum 0x57d6 (incorrect -> 0xf156), seq 508:761, ack 522, win 501, options [nop,nop,TS val 1496971863 ecr 228543601], length 253: HTTP
+16:07:58.714948 IP (tos 0x0, ttl 62, id 27254, offset 0, flags [DF], proto TCP (6), length 309)
+    10.126.160.69.80 > 10.126.161.113.47242: Flags [P.], cksum 0x128e (correct), seq 522:779, ack 761, win 244, options [nop,nop,TS val 228543615 ecr 1496971863], length 257: HTTP, length: 257
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 0
+	Date: Wed, 14 Jun 2023 16:07:58 GMT
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+16:08:58.716800 IP (tos 0x0, ttl 64, id 31014, offset 0, flags [DF], proto TCP (6), length 279)
+    10.126.161.113.47242 > 10.126.160.69.80: Flags [P.], cksum 0x57bc (incorrect -> 0x81ad), seq 761:988, ack 779, win 501, options [nop,nop,TS val 1497031878 ecr 228543615], length 227: HTTP, length: 227
+	GET /default/controller/v1/e45f0161078a HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+16:08:58.738643 IP (tos 0x0, ttl 62, id 27255, offset 0, flags [DF], proto TCP (6), length 571)
+    10.126.160.69.80 > 10.126.161.113.47242: Flags [P.], cksum 0x7ffb (correct), seq 779:1298, ack 988, win 252, options [nop,nop,TS val 228603639 ecr 1497031878], length 519: HTTP, length: 519
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 171
+	Content-Type: application/json;charset=utf-8
+	Date: Wed, 14 Jun 2023 16:08:58 GMT
+	Etag: "0c0100847124a43fa7d94aa166a6dddea"
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+	{"config":{"polling":{"sleep":"00:01:00"}},"_links":{"deploymentBase":{"href":"http://hawkbit.igor.lan/default/controller/v1/e45f0161078a/deploymentBase/10?c=419911568"}}} [|http]
+16:08:58.740454 IP (tos 0x0, ttl 64, id 31016, offset 0, flags [DF], proto TCP (6), length 309)
+    10.126.161.113.47242 > 10.126.160.69.80: Flags [P.], cksum 0x57da (incorrect -> 0xef79), seq 988:1245, ack 1298, win 501, options [nop,nop,TS val 1497031902 ecr 228603639], length 257: HTTP, length: 257
+	GET /default/controller/v1/e45f0161078a/deploymentBase/10?c=419911568 HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+16:08:58.771767 IP (tos 0x0, ttl 62, id 27256, offset 0, flags [DF], proto TCP (6), length 1080)
+    10.126.160.69.80 > 10.126.161.113.47242: Flags [P.], cksum 0xadd3 (correct), seq 1298:2326, ack 1245, win 261, options [nop,nop,TS val 228603672 ecr 1497031902], length 1028: HTTP, length: 1028
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 680
+	Content-Type: application/json;charset=utf-8
+	Date: Wed, 14 Jun 2023 16:08:58 GMT
+	Etag: "0d716533bd3c7ddcb095683c55fc54676"
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+	{"id":"10","deployment":{"download":"forced","update":"forced","chunks":[{"part":"bApp","version":"0.5.1","name":"iosea-locator","artifacts":[{"filename":"iosea-locator_0.5.1.swu","hashes":{"sha1":"33de5087bb40456690da25586c723b8ea0e2ca27","md5":"d91e5b60061d84f7e8359259b8036b7d","sha256":"2e6981940324df2a6aa9147eae2de1f6f9b2c0b30eb3fb811e8ea3bf17ac7a01"},"size":8909824,"_links":{"download-http":{"href":"http://hawkbit.igor.lan:8080/DEFAULT/controller/v1/e45f0161078a/softwaremodules/1/artifacts/iosea-locator_0.5.1.swu"},"md5sum-http":{"href":"http://hawkbit.igor.lan:8080/DEFAULT/controller/v1/e45f0161078a/softwaremodules/1/artifacts/iosea-locator_0.5.1.swu.MD5SUM"}}}]}]}} [|http]
+16:08:58.775370 IP (tos 0x0, ttl 64, id 31017, offset 0, flags [DF], proto TCP (6), length 279)
+    10.126.161.113.47242 > 10.126.160.69.80: Flags [P.], cksum 0x57bc (incorrect -> 0x8ee9), seq 1245:1472, ack 2326, win 501, options [nop,nop,TS val 1497031937 ecr 228603672], length 227: HTTP, length: 227
+	GET /default/controller/v1/e45f0161078a HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+16:08:58.795143 IP (tos 0x0, ttl 62, id 27257, offset 0, flags [DF], proto TCP (6), length 571)
+    10.126.160.69.80 > 10.126.161.113.47242: Flags [P.], cksum 0x4caf (correct), seq 2326:2845, ack 1472, win 269, options [nop,nop,TS val 228603695 ecr 1497031937], length 519: HTTP, length: 519
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 171
+	Content-Type: application/json;charset=utf-8
+	Date: Wed, 14 Jun 2023 16:08:58 GMT
+	Etag: "0740a5caaf21b43c0784b0e4cf2b6e609"
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+	{"config":{"polling":{"sleep":"00:01:00"}},"_links":{"deploymentBase":{"href":"http://hawkbit.igor.lan/default/controller/v1/e45f0161078a/deploymentBase/10?c=419941359"}}} [|http]
+16:08:58.796996 IP (tos 0x0, ttl 64, id 31018, offset 0, flags [DF], proto TCP (6), length 309)
+    10.126.161.113.47242 > 10.126.160.69.80: Flags [P.], cksum 0x57da (incorrect -> 0xe51b), seq 1472:1729, ack 2845, win 501, options [nop,nop,TS val 1497031958 ecr 228603695], length 257: HTTP, length: 257
+	GET /default/controller/v1/e45f0161078a/deploymentBase/10?c=419941359 HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+16:08:58.821082 IP (tos 0x0, ttl 62, id 27258, offset 0, flags [DF], proto TCP (6), length 1080)
+    10.126.160.69.80 > 10.126.161.113.47242: Flags [P.], cksum 0xa56a (correct), seq 2845:3873, ack 1729, win 278, options [nop,nop,TS val 228603721 ecr 1497031958], length 1028: HTTP, length: 1028
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 680
+	Content-Type: application/json;charset=utf-8
+	Date: Wed, 14 Jun 2023 16:08:58 GMT
+	Etag: "0d716533bd3c7ddcb095683c55fc54676"
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+	{"id":"10","deployment":{"download":"forced","update":"forced","chunks":[{"part":"bApp","version":"0.5.1","name":"iosea-locator","artifacts":[{"filename":"iosea-locator_0.5.1.swu","hashes":{"sha1":"33de5087bb40456690da25586c723b8ea0e2ca27","md5":"d91e5b60061d84f7e8359259b8036b7d","sha256":"2e6981940324df2a6aa9147eae2de1f6f9b2c0b30eb3fb811e8ea3bf17ac7a01"},"size":8909824,"_links":{"download-http":{"href":"http://hawkbit.igor.lan:8080/DEFAULT/controller/v1/e45f0161078a/softwaremodules/1/artifacts/iosea-locator_0.5.1.swu"},"md5sum-http":{"href":"http://hawkbit.igor.lan:8080/DEFAULT/controller/v1/e45f0161078a/softwaremodules/1/artifacts/iosea-locator_0.5.1.swu.MD5SUM"}}}]}]}} [|http]
+16:08:58.823281 IP (tos 0x0, ttl 64, id 31019, offset 0, flags [DF], proto TCP (6), length 533)
+    10.126.161.113.47242 > 10.126.160.69.80: Flags [P.], cksum 0x58ba (incorrect -> 0x78d1), seq 1729:2210, ack 3873, win 501, options [nop,nop,TS val 1497031985 ecr 228603721], length 481: HTTP, length: 481
+	POST /default/controller/v1/e45f0161078a/deploymentBase/10/feedback HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	Content-Length: 205
+	
+	{ "id": 10, "time": "20230614T160858", "status": { "result": { "progress": { "cnt" : 0, "of" : 1 }, "finished": "none" }, "execution": "proceeding", "details" : [ "Installing Update Chunk Artifacts." ] } } [|http]
+16:08:58.842345 IP (tos 0x0, ttl 62, id 27259, offset 0, flags [DF], proto TCP (6), length 309)
+    10.126.160.69.80 > 10.126.161.113.47242: Flags [P.], cksum 0x28e8 (correct), seq 3873:4130, ack 2210, win 286, options [nop,nop,TS val 228603743 ecr 1497031985], length 257: HTTP, length: 257
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 0
+	Date: Wed, 14 Jun 2023 16:08:58 GMT
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+16:08:58.913518 IP (tos 0x0, ttl 64, id 59, offset 0, flags [DF], proto TCP (6), length 353)
+    10.126.161.113.35800 > 10.126.160.69.8080: Flags [P.], cksum 0x5806 (incorrect -> 0x501d), seq 3236741507:3236741808, ack 2789702429, win 502, options [nop,nop,TS val 1497032075 ecr 228603813], length 301: HTTP, length: 301
+	HEAD /DEFAULT/controller/v1/e45f0161078a/softwaremodules/1/artifacts/iosea-locator_0.5.1.swu HTTP/1.1
+	Host: hawkbit.igor.lan:8080
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/octet-stream
+	Accept: application/octet-stream
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+16:08:58.920847 IP (tos 0x0, ttl 64, id 52198, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0x0e5f), seq 2945812811:2945814209, ack 1738772243, win 502, options [nop,nop,TS val 1497032082 ecr 228603820], length 1398: HTTP, length: 1398
+	POST /default/controller/v1/e45f0161078a/deploymentBase/10/feedback HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	Content-Length: 4830
+	
+	{ "id": 10, "time": "20230614T160858", "status": { "result": { "progress": { "cnt" : 0, "of" : 0 }, "finished": "none" }, "execution": "proceeding", "details" : [ "[listener_create] : got socket fd=4 at /tmp/swupdateprog from systemd","[listener_create] : got socket fd=3 at /tmp/sockinstctrl from systemd","[read_module_settings] : Reading config settings for module suricatta","[start_swupdate_subprocess] : Started suricatta with pid 640 and fd 7","[read_settings_file] : Reading config file /opt/swupdate/swupdate.cfg","[read_module_settings] : Reading config settings for module suricatta","[start_suricatta] : Default suricatta module  hawkbit  selected.","[read_settings_file] : Reading config file /opt/swupdate/swupdate.cfg","[do_get_state] : Read state=0 from persistent storage.","[read_module_settings] : Reading config settings for module suricatta","[read_module_settings] : No config settings found for module hawkbit","[read_module_settings] : Reading config settings for module identify","[settings_into_dict] : Identify for configData: hardwareType --> raspberryPI ","[settings_into_dict] : Identify for [|http]
+16:08:58.920869 IP (tos 0x0, ttl 64, id 52199, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0x5233), seq 1398:2796, ack 1, win 502, options [nop,nop,TS val 1497032082 ecr 228603820], length 1398: HTTP
+16:08:58.920879 IP (tos 0x0, ttl 64, id 52200, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0xbb09), seq 2796:4194, ack 1, win 502, options [nop,nop,TS val 1497032082 ecr 228603820], length 1398: HTTP
+16:08:58.920901 IP (tos 0x0, ttl 64, id 52201, offset 0, flags [DF], proto TCP (6), length 965)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [P.], cksum 0x5a6a (incorrect -> 0xdf48), seq 4194:5107, ack 1, win 502, options [nop,nop,TS val 1497032082 ecr 228603820], length 913: HTTP
+16:08:58.958715 IP (tos 0x0, ttl 62, id 8496, offset 0, flags [DF], proto TCP (6), length 577)
+    10.126.160.69.8080 > 10.126.161.113.35800: Flags [P.], cksum 0x5f40 (correct), seq 1:526, ack 301, win 227, options [nop,nop,TS val 228603859 ecr 1497032075], length 525: HTTP, length: 525
+	HTTP/1.1 200 OK
+	Accept-Ranges: bytes
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Disposition: attachment;filename=iosea-locator_0.5.1.swu
+	Content-Length: 8909824
+	Content-Range: bytes 0-8909823/8909824
+	Content-Type: application/octet-stream
+	Etag: 33de5087bb40456690da25586c723b8ea0e2ca27
+	Expires: 0
+	Last-Modified: Tue, 13 Jun 2023 19:58:05 GMT
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	Date: Wed, 14 Jun 2023 16:08:58 GMT
+	
+16:08:58.961503 IP (tos 0x0, ttl 64, id 61, offset 0, flags [DF], proto TCP (6), length 352)
+    10.126.161.113.35800 > 10.126.160.69.8080: Flags [P.], cksum 0x5805 (incorrect -> 0xbb4a), seq 301:601, ack 526, win 501, options [nop,nop,TS val 1497032123 ecr 228603859], length 300: HTTP, length: 300
+	GET /DEFAULT/controller/v1/e45f0161078a/softwaremodules/1/artifacts/iosea-locator_0.5.1.swu HTTP/1.1
+	Host: hawkbit.igor.lan:8080
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/octet-stream
+	Accept: application/octet-stream
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+16:08:58.965158 IP (tos 0x0, ttl 62, id 64852, offset 0, flags [DF], proto TCP (6), length 309)
+    10.126.160.69.80 > 10.126.161.113.47244: Flags [P.], cksum 0xcd88 (correct), seq 1:258, ack 5107, win 299, options [nop,nop,TS val 228603866 ecr 1497032082], length 257: HTTP, length: 257
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 0
+	Date: Wed, 14 Jun 2023 16:08:58 GMT
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+16:08:58.991937 IP (tos 0x0, ttl 62, id 8498, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.160.69.8080 > 10.126.161.113.35800: Flags [.], cksum 0x3563 (correct), seq 526:1924, ack 601, win 236, options [nop,nop,TS val 228603892 ecr 1497032123], length 1398: HTTP, length: 1398
+	HTTP/1.1 200 OK
+	Accept-Ranges: bytes
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Disposition: attachment;filename=iosea-locator_0.5.1.swu
+	Content-Length: 8909824
+	Content-Range: bytes 0-8909823/8909824
+	Content-Type: application/octet-stream
+	Etag: 33de5087bb40456690da25586c723b8ea0e2ca27
+	Expires: 0
+	Last-Modified: Tue, 13 Jun 2023 19:58:05 GMT
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	Date: Wed, 14 Jun 2023 16:08:58 GMT
+	
+16:09:03.982220 IP (tos 0x0, ttl 64, id 52207, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0x76e9), seq 8488:9886, ack 515, win 501, options [nop,nop,TS val 1497037144 ecr 228605332], length 1398: HTTP, length: 1398
+	POST /default/controller/v1/e45f0161078a/deploymentBase/10/feedback HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	Content-Length: 5464
+	
+	{ "id": 10, "time": "20230614T160903", "status": { "result": { "progress": { "cnt" : 2, "of" : 0 }, "finished": "none" }, "execution": "proceeding", "details" : [ "[process_notification_thread] : Update log to server from thread","[channel_set_options] : cURL s low download speed timeout is disabled, this is most probably not what you want. Adapted it to 300s instead. ","[channel_post_method] : POSTed/PATCHed to http://hawkbit.igor.lan/default/controller/v1/e45f0161078a/deploymentBase/10/feedback: {  id : 10,  time :  20230614T160900 ,  status : {  result : {  progress : {  cnt  : 1,  of  : 0 },  finished :  none  },  execution :  proceeding ,  details  : [  Software Update started ! , [network_initializer] : Software update started , [channel_log_effective_url] : Channel s effective URL resolved to http://hawkbit.igor.lan/default/controller/v1/e45f0161078a/deploymentBase/10/feedback , [channel_log_reply] : Channel operation returned HTTP status code 200. , [parse_reply] : Got channel reply:  , [extract_file_to_tmp] : Found file , [extract_file_to_tmp] :  filename sw-description , [extract_file_to_tmp] : [|http]
+16:09:03.982246 IP (tos 0x0, ttl 64, id 52208, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0xdac7), seq 9886:11284, ack 515, win 501, options [nop,nop,TS val 1497037144 ecr 228605332], length 1398: HTTP
+16:09:03.982255 IP (tos 0x0, ttl 64, id 52209, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0x87c7), seq 11284:12682, ack 515, win 501, options [nop,nop,TS val 1497037144 ecr 228605332], length 1398: HTTP
+16:09:03.982265 IP (tos 0x0, ttl 64, id 52210, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0x6416), seq 12682:14080, ack 515, win 501, options [nop,nop,TS val 1497037144 ecr 228605332], length 1398: HTTP
+16:09:03.982274 IP (tos 0x0, ttl 64, id 52211, offset 0, flags [DF], proto TCP (6), length 201)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [P.], cksum 0x576e (incorrect -> 0x1237), seq 14080:14229, ack 515, win 501, options [nop,nop,TS val 1497037144 ecr 228605332], length 149: HTTP
+
+16:09:04.001238 IP (tos 0x0, ttl 62, id 64857, offset 0, flags [DF], proto TCP (6), length 625)
+    10.126.160.69.80 > 10.126.161.113.47244: Flags [P.], cksum 0x7bf0 (correct), seq 515:1088, ack 14229, win 441, options [nop,nop,TS val 228608902 ecr 1497037144], length 573: HTTP, length: 573
+	HTTP/1.1 403 Forbidden
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 261
+	Content-Type: application/json;charset=utf-8
+	Date: Wed, 14 Jun 2023 16:09:03 GMT
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+	{"exceptionClass":"org.eclipse.hawkbit.repository.exception.AssignmentQuotaExceededException","errorCode":"hawkbit.server.error.quota.tooManyEntries","message":"Quota exceeded: Cannot assign 51 more Message entities to ActionStatus '<new>'. The maximum is 50."} [|http]
+
+16:09:07.445582 IP (tos 0x0, ttl 64, id 52213, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0x5e0b), seq 14229:15627, ack 1088, win 501, options [nop,nop,TS val 1497040607 ecr 228608902], length 1398: HTTP, length: 1398
+	POST /default/controller/v1/e45f0161078a/deploymentBase/10/feedback HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	Content-Length: 5760
+	
+	{ "id": 10, "time": "20230614T160907", "status": { "result": { "progress": { "cnt" : 3, "of" : 0 }, "finished": "none" }, "execution": "proceeding", "details" : [ "[process_notification_thread] : Update log to server from thread","[channel_set_options] : cURL s low download speed timeout is disabled, this is most probably not what you want. Adapted it to 300s instead. ","[channel_post_method] : POSTed/PATCHed to http://hawkbit.igor.lan/default/controller/v1/e45f0161078a/deploymentBase/10/feedback: {  id : 10,  time :  20230614T160903 ,  status : {  result : {  progress : {  cnt  : 2,  of  : 0 },  finished :  none  },  execution :  proceeding ,  details  : [  [process_notification_thread] : Update log to server from thread , [channel_set_options] : cURL s low download speed timeout is disabled, this is most probably not what you want. Adapted it to 300s instead.  , [channel_post_method] : POSTed/PATCHed to http://hawkbit.igor.lan/default/controller/v1/e45f0161078a/deploymentBase/10/feedback: {  id : 10,  time :  20230614T160900 ,  status : {  result : {  progress : {  cnt  : 1,  of  : 0 },  finished :  no [|http]
+16:09:07.445615 IP (tos 0x0, ttl 64, id 52214, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0xe1f4), seq 15627:17025, ack 1088, win 501, options [nop,nop,TS val 1497040607 ecr 228608902], length 1398: HTTP
+16:09:07.445626 IP (tos 0x0, ttl 64, id 52215, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0xf667), seq 17025:18423, ack 1088, win 501, options [nop,nop,TS val 1497040607 ecr 228608902], length 1398: HTTP
+16:09:07.445634 IP (tos 0x0, ttl 64, id 52216, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0x7072), seq 18423:19821, ack 1088, win 501, options [nop,nop,TS val 1497040607 ecr 228608902], length 1398: HTTP
+16:09:07.445643 IP (tos 0x0, ttl 64, id 52217, offset 0, flags [DF], proto TCP (6), length 497)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [P.], cksum 0x5896 (incorrect -> 0xbee3), seq 19821:20266, ack 1088, win 501, options [nop,nop,TS val 1497040607 ecr 228608902], length 445: HTTP
+16:09:07.460358 IP (tos 0x0, ttl 62, id 64859, offset 0, flags [DF], proto TCP (6), length 590)
+    10.126.160.69.80 > 10.126.161.113.47244: Flags [P.], cksum 0x6386 (correct), seq 1088:1626, ack 20266, win 536, options [nop,nop,TS val 228612361 ecr 1497040607], length 538: HTTP, length: 538
+	HTTP/1.1 400 Bad Request
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 224
+	Content-Type: application/json;charset=utf-8
+	Date: Wed, 14 Jun 2023 16:09:07 GMT
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+	{"exceptionClass":"javax.validation.ConstraintViolationException","errorCode":"hawkbit.server.error.repo.constraintViolation","message":"addUpdateActionStatus.create.messages[5].<list element> may have unsafe html content."} [|http]
+16:09:22.476466 IP (tos 0x0, ttl 64, id 52219, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0x9e9a), seq 20266:21664, ack 1626, win 501, options [nop,nop,TS val 1497055638 ecr 228612361], length 1398: HTTP, length: 1398
+	POST /default/controller/v1/e45f0161078a/deploymentBase/10/feedback HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	Content-Length: 5240
+	
+	{ "id": 10, "time": "20230614T160922", "status": { "result": { "progress": { "cnt" : 4, "of" : 0 }, "finished": "none" }, "execution": "proceeding", "details" : [ "[extract_files] :  filename ioSea_locator.yaml.z","[process_notification_thread] : Update log to server from thread","[channel_set_options] : cURL s low download speed timeout is disabled, this is most probably not what you want. Adapted it to 300s instead. ","[extract_files] :  filename ioSea_locator.local.yaml.z","[channel_post_method] : POSTed/PATCHed to http://hawkbit.igor.lan/default/controller/v1/e45f0161078a/deploymentBase/10/feedback: {  id : 10,  time :  20230614T160907 ,  status : {  result : {  progress : {  cnt  : 3,  of  : 0 },  finished :  none  },  execution :  proceeding ,  details  : [  [process_notification_thread] : Update log to server from thread , [channel_set_options] : cURL s low download speed timeout is disabled, this is most probably not what you want. Adapted it to 300s instead.  , [channel_post_method] : POSTed/PATCHed to http://hawkbit.igor.lan/default/controller/v1/e45f0161078a/deploymentBase/10/feedback: {  id : [|http]
+16:09:22.476499 IP (tos 0x0, ttl 64, id 52220, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0x0899), seq 21664:23062, ack 1626, win 501, options [nop,nop,TS val 1497055638 ecr 228612361], length 1398: HTTP
+16:09:22.476509 IP (tos 0x0, ttl 64, id 52221, offset 0, flags [DF], proto TCP (6), length 1450)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [.], cksum 0x5c4f (incorrect -> 0x14f4), seq 23062:24460, ack 1626, win 501, options [nop,nop,TS val 1497055638 ecr 228612361], length 1398: HTTP
+16:09:22.476518 IP (tos 0x0, ttl 64, id 52222, offset 0, flags [DF], proto TCP (6), length 1375)
+    10.126.161.113.47244 > 10.126.160.69.80: Flags [P.], cksum 0x5c04 (incorrect -> 0xceb4), seq 24460:25783, ack 1626, win 501, options [nop,nop,TS val 1497055638 ecr 228612361], length 1323: HTTP
+16:09:22.507621 IP (tos 0x0, ttl 62, id 64861, offset 0, flags [DF], proto TCP (6), length 309)
+    10.126.160.69.80 > 10.126.161.113.47244: Flags [P.], cksum 0xbf33 (correct), seq 1626:1883, ack 25783, win 622, options [nop,nop,TS val 228627408 ecr 1497055638], length 257: HTTP, length: 257
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 0
+	Date: Wed, 14 Jun 2023 16:09:22 GMT
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+16:09:22.509820 IP (tos 0x0, ttl 64, id 31021, offset 0, flags [DF], proto TCP (6), length 515)
+    10.126.161.113.47242 > 10.126.160.69.80: Flags [P.], cksum 0x58a8 (incorrect -> 0x68d3), seq 2210:2673, ack 4130, win 501, options [nop,nop,TS val 1497055671 ecr 228603743], length 463: HTTP, length: 463
+	POST /default/controller/v1/e45f0161078a/deploymentBase/10/feedback HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	Content-Length: 187
+	
+	{ "id": 10, "time": "20230614T160922", "status": { "result": { "progress": { "cnt" : 1, "of" : 1 }, "finished": "none" }, "execution": "proceeding", "details" : [ "Installed Chunk." ] } } [|http]
+16:09:22.530982 IP (tos 0x0, ttl 62, id 27260, offset 0, flags [DF], proto TCP (6), length 309)
+    10.126.160.69.80 > 10.126.161.113.47242: Flags [P.], cksum 0x6f07 (correct), seq 4130:4387, ack 2673, win 294, options [nop,nop,TS val 228627431 ecr 1497055671], length 257: HTTP, length: 257
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 0
+	Date: Wed, 14 Jun 2023 16:09:22 GMT
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+16:09:22.532648 IP (tos 0x0, ttl 64, id 31023, offset 0, flags [DF], proto TCP (6), length 520)
+    10.126.161.113.47242 > 10.126.160.69.80: Flags [P.], cksum 0x58ad (incorrect -> 0x5e60), seq 2673:3141, ack 4387, win 501, options [nop,nop,TS val 1497055694 ecr 228627431], length 468: HTTP, length: 468
+	POST /default/controller/v1/e45f0161078a/deploymentBase/10/feedback HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	Content-Length: 192
+	
+	{ "id": 10, "time": "20230614T160922", "status": { "result": { "progress": { "cnt" : 1, "of" : 1 }, "finished": "none" }, "execution": "proceeding", "details" : [ "All Chunks Installed." ] } } [|http]
+16:09:22.558600 IP (tos 0x0, ttl 62, id 27261, offset 0, flags [DF], proto TCP (6), length 309)
+    10.126.160.69.80 > 10.126.161.113.47242: Flags [P.], cksum 0x6bf6 (correct), seq 4387:4644, ack 3141, win 303, options [nop,nop,TS val 228627459 ecr 1497055694], length 257: HTTP, length: 257
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 0
+	Date: Wed, 14 Jun 2023 16:09:22 GMT
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+16:09:42.453110 IP (tos 0x0, ttl 64, id 56426, offset 0, flags [DF], proto TCP (6), length 279)
+    10.126.161.113.47246 > 10.126.160.69.80: Flags [P.], cksum 0x57bc (incorrect -> 0x7b98), seq 3189090202:3189090429, ack 2578554353, win 502, options [nop,nop,TS val 1497075614 ecr 228647353], length 227: HTTP, length: 227
+	GET /default/controller/v1/e45f0161078a HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+16:09:42.565208 IP (tos 0x0, ttl 62, id 64799, offset 0, flags [DF], proto TCP (6), length 571)
+    10.126.160.69.80 > 10.126.161.113.47246: Flags [P.], cksum 0x3935 (correct), seq 1:520, ack 227, win 227, options [nop,nop,TS val 228647466 ecr 1497075614], length 519: HTTP, length: 519
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 171
+	Content-Type: application/json;charset=utf-8
+	Date: Wed, 14 Jun 2023 16:09:42 GMT
+	Etag: "0740a5caaf21b43c0784b0e4cf2b6e609"
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+	{"config":{"polling":{"sleep":"00:01:00"}},"_links":{"deploymentBase":{"href":"http://hawkbit.igor.lan/default/controller/v1/e45f0161078a/deploymentBase/10?c=419941359"}}} [|http]
+16:09:42.567771 IP (tos 0x0, ttl 64, id 56428, offset 0, flags [DF], proto TCP (6), length 309)
+    10.126.161.113.47246 > 10.126.160.69.80: Flags [P.], cksum 0x57da (incorrect -> 0xd113), seq 227:484, ack 520, win 501, options [nop,nop,TS val 1497075729 ecr 228647466], length 257: HTTP, length: 257
+	GET /default/controller/v1/e45f0161078a/deploymentBase/10?c=419941359 HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+16:09:42.686061 IP (tos 0x0, ttl 62, id 64801, offset 0, flags [DF], proto TCP (6), length 1080)
+    10.126.160.69.80 > 10.126.161.113.47246: Flags [P.], cksum 0x9133 (correct), seq 520:1548, ack 484, win 236, options [nop,nop,TS val 228647587 ecr 1497075729], length 1028: HTTP, length: 1028
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 680
+	Content-Type: application/json;charset=utf-8
+	Date: Wed, 14 Jun 2023 16:09:42 GMT
+	Etag: "0d716533bd3c7ddcb095683c55fc54676"
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+	{"id":"10","deployment":{"download":"forced","update":"forced","chunks":[{"part":"bApp","version":"0.5.1","name":"iosea-locator","artifacts":[{"filename":"iosea-locator_0.5.1.swu","hashes":{"sha1":"33de5087bb40456690da25586c723b8ea0e2ca27","md5":"d91e5b60061d84f7e8359259b8036b7d","sha256":"2e6981940324df2a6aa9147eae2de1f6f9b2c0b30eb3fb811e8ea3bf17ac7a01"},"size":8909824,"_links":{"download-http":{"href":"http://hawkbit.igor.lan:8080/DEFAULT/controller/v1/e45f0161078a/softwaremodules/1/artifacts/iosea-locator_0.5.1.swu"},"md5sum-http":{"href":"http://hawkbit.igor.lan:8080/DEFAULT/controller/v1/e45f0161078a/softwaremodules/1/artifacts/iosea-locator_0.5.1.swu.MD5SUM"}}}]}]}} [|http]
+16:09:42.688034 IP (tos 0x0, ttl 64, id 56430, offset 0, flags [DF], proto TCP (6), length 515)
+    10.126.161.113.47246 > 10.126.160.69.80: Flags [P.], cksum 0x58a8 (incorrect -> 0x34ff), seq 484:947, ack 1548, win 501, options [nop,nop,TS val 1497075849 ecr 228647587], length 463: HTTP, length: 463
+	POST /default/controller/v1/e45f0161078a/deploymentBase/10/feedback HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	Content-Length: 187
+	
+	{ "id": 10, "time": "20230614T160942", "status": { "result": { "progress": { "cnt" : 0, "of" : 0 }, "finished": "success" }, "execution": "closed", "details" : [ "Update Installed." ] } } [|http]
+16:09:42.735115 IP (tos 0x0, ttl 62, id 64803, offset 0, flags [DF], proto TCP (6), length 309)
+    10.126.160.69.80 > 10.126.161.113.47246: Flags [P.], cksum 0x144b (correct), seq 1548:1805, ack 947, win 244, options [nop,nop,TS val 228647636 ecr 1497075849], length 257: HTTP, length: 257
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 0
+	Date: Wed, 14 Jun 2023 16:09:42 GMT
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+16:09:42.770181 IP (tos 0x0, ttl 64, id 56432, offset 0, flags [DF], proto TCP (6), length 279)
+    10.126.161.113.47246 > 10.126.160.69.80: Flags [P.], cksum 0x57bc (incorrect -> 0x6e81), seq 947:1174, ack 1805, win 501, options [nop,nop,TS val 1497075932 ecr 228647636], length 227: HTTP, length: 227
+	GET /default/controller/v1/e45f0161078a HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+16:09:42.789666 IP (tos 0x0, ttl 62, id 64805, offset 0, flags [DF], proto TCP (6), length 548)
+    10.126.160.69.80 > 10.126.161.113.47246: Flags [P.], cksum 0x0f05 (correct), seq 1805:2301, ack 1174, win 252, options [nop,nop,TS val 228647690 ecr 1497075932], length 496: HTTP, length: 496
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 148
+	Content-Type: application/json;charset=utf-8
+	Date: Wed, 14 Jun 2023 16:09:42 GMT
+	Etag: "0c1ed59e71257d1b201b59138777d093e"
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block
+	
+	{"config":{"polling":{"sleep":"00:01:00"}},"_links":{"configData":{"href":"http://hawkbit.igor.lan/default/controller/v1/e45f0161078a/configData"}}} [|http]
+16:09:42.791607 IP (tos 0x0, ttl 64, id 56433, offset 0, flags [DF], proto TCP (6), length 333)
+    10.126.161.113.47246 > 10.126.160.69.80: Flags [P.], cksum 0x57f2 (incorrect -> 0x23b9), seq 1174:1455, ack 2301, win 501, options [nop,nop,TS val 1497075953 ecr 228647690], length 281: HTTP, length: 281
+	PUT /default/controller/v1/e45f0161078a/configData HTTP/1.1
+	Host: hawkbit.igor.lan
+	User-Agent: libcurl-agent/1.0
+	Content-Type: application/json
+	Accept: application/json
+	Authorization: GatewayToken XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	Content-Length: 253
+	Expect: 100-continue
+	
+16:09:42.810845 IP (tos 0x0, ttl 62, id 64806, offset 0, flags [DF], proto TCP (6), length 77)
+    10.126.160.69.80 > 10.126.161.113.47246: Flags [P.], cksum 0xa907 (correct), seq 2301:2326, ack 1455, win 261, options [nop,nop,TS val 228647711 ecr 1497075953], length 25: HTTP, length: 25
+	HTTP/1.1 100 Continue
+	
+16:09:42.811374 IP (tos 0x0, ttl 64, id 56434, offset 0, flags [DF], proto TCP (6), length 305)
+    10.126.161.113.47246 > 10.126.160.69.80: Flags [P.], cksum 0x57d6 (incorrect -> 0xee39), seq 1455:1708, ack 2326, win 501, options [nop,nop,TS val 1497075973 ecr 228647711], length 253: HTTP
+16:09:42.822525 IP (tos 0x0, ttl 62, id 64807, offset 0, flags [DF], proto TCP (6), length 309)
+    10.126.160.69.80 > 10.126.161.113.47246: Flags [P.], cksum 0x0d5c (correct), seq 2326:2583, ack 1708, win 269, options [nop,nop,TS val 228647723 ecr 1497075973], length 257: HTTP, length: 257
+	HTTP/1.1 200 OK
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Content-Length: 0
+	Date: Wed, 14 Jun 2023 16:09:42 GMT
+	Expires: 0
+	Pragma: no-cache
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	X-Xss-Protection: 1; mode=block

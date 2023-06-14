@@ -1,0 +1,29 @@
+rootfs=$(swupdate -g)
+
+if [ $rootfs == '/dev/mmcblk0p2' ];then
+	selection="-e stable,copy2"
+else
+	selection="-e stable,copy1"
+fi
+
+state=$(fw_printenv ustate | cut -f 2 -d'=')
+if [ -z "$state" ];then
+	fw_setenv ustate 1
+	state=$(fw_printenv ustate | cut -f 2 -d'=')
+fi
+if [ $state == 1 ];then
+	SWUPDATE_SURICATTA_ARGS="-c 2"
+else
+	SWUPDATE_SURICATTA_ARGS=" "
+fi
+
+if [ -e /opt/swupdate/swupdate.cfg ];then
+	CFGFILE="/opt/swupdate/swupdate.cfg"
+else
+	CFGFILE="/etc/swupdate.cfg"
+fi
+
+# Start webserver
+SWUPDATE_WEBSERVER_ARGS="-p 8081"
+
+SWUPDATE_ARGS="-H raspberrypi4-64:1.0 ${selection} -f ${CFGFILE}"
